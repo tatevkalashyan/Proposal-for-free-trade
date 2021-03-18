@@ -1,0 +1,70 @@
+.bg-yellow-img {
+  background-image: url("../../img/Intersect.png");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 50% 100%;
+  display: flex;
+  align-items: center;
+}
+
+.log-reg-form {
+
+  max-width: 400px;
+  width: 100%;
+  padding-right: 16px;
+  padding-left: 16px;
+  .form-title {
+    font-family: 'Scada', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: 0.235em;
+    text-transform: uppercase;
+    color: $base-dark;
+    text-align: center;
+    margin-bottom: 26px;
+  }
+  .form-control {
+    border: 1px solid $base-dark;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 6px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.165em;
+    color: #DADADA;
+    height: 56px;
+    margin-bottom: 30px;
+    padding-left: 50px;
+  }
+  .btn_oval {
+    width: 250px;
+  }
+  .form-group{
+    position: relative;
+    .form-group-icon {
+      position: absolute;
+      top: 16px;
+      left: 15px;
+    }
+    .error-text {
+      display: none;
+      color: red;
+    }
+    &.error {
+      .form-control {
+        color: red;
+      }
+      .error-text {
+         display: block;
+      }
+      .text-base {
+        color: red;
+      }
+    }
+  }
+}

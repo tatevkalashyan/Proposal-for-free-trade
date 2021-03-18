@@ -1,0 +1,79 @@
+
+.distance-range {
+  label {
+    font-family: "Scada", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    color: #334478;
+  }
+  input {
+    border:0;
+    background-color: transparent;
+    width: 100px;
+    font-family: "Scada", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: #DFA300;
+    &:focus {
+      outline: none;
+    }
+  }
+  .ui-widget.ui-widget-content {
+    border: 0;
+    height: 4px;
+  }
+  .ui-widget-content {
+    border: 0;
+    background: rgba(51, 68, 120, 0.55);
+  }
+  .ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl {
+    border-top-left-radius: 10px;
+  }
+  .ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr {
+    border-top-right-radius: 10px;
+  }
+  .ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl {
+    border-bottom-left-radius: 10px;
+  }
+  .ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+    border-bottom-right-radius: 10px;
+  }
+  .ui-slider-horizontal .ui-slider-handle {
+    top: -.25em;
+    margin-left: -.6em;
+  }
+  #slider-range-min {
+
+    .ui-widget-header {
+      border: 0;
+      background: #334478;
+      color: #333333;
+      font-weight: bold;
+    }
+    .ui-state-default,
+    .ui-state-focus,
+    .ui-state-hover,
+    .ui-state-active,
+    .ui-widget-content .ui-state-default,
+    .ui-widget-header .ui-state-default,
+    .ui-button,
+    html .ui-button.ui-state-disabled:hover,
+    html .ui-button.ui-state-disabled:active {
+      border: 1px solid #DFA300;
+      font-weight: normal;
+      color: #DFA300;
+      background-color: #DFA300;
+      border-radius: 50% !important;
+      width: 10px;
+      height: 10px;
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+      outline: none!important;
+    }
+  }
+}

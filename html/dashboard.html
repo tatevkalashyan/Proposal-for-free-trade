@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+          integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="../css/secondary/jq-ui.css">
+    <link rel="stylesheet" href="../css/secondary/owl-carousel-min.css">
+    <link rel="stylesheet" href="../css/secondary/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/css/main.css">
+</head>
+
+<body>
+
+<main>
+  <div class="dashboard">
+      <div id="wrapper" class="active">
+          <div id="sidebar-wrapper">
+              <ul id="sidebar_menu" class="sidebar-nav">
+                  <li class="sidebar-brand">
+                      <a id="menu-toggle" href="#">
+                          <img src="../img/logo/logo.png" width="167" height="39" alt="">
+                          <span id="main_icon"><img src="../img/icons/hamburger.png" alt=""></span>
+                      </a>
+                  </li>
+                  <div class="p-4 d-flex align-items-center dashboard-avatar">
+                      <div class="dashboard-avatar-img">
+                          <img src="../img/lukas-denier-fVM6nwS9FGQ-unsplash%201.png" alt="">
+                      </div>
+                      <div class="avatar-name ml-3">Welcome, batman</div>
+                  </div>
+              </ul>
+              <ul class="sidebar-nav sidebar-nav-list" id="sidebar">
+                  <li class="active">
+                      <a href="#">
+                          <img src="../img/icons/dashboard-24px%201.png" alt="" class="mr-3">
+                         <span class="menu-text">Workstation</span>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="dashboardAccount.html">
+                          <img src="../img/icons/person_outline-24px%20(2)%201.png" alt="" class="mr-3">
+                          <span class="menu-text">Account</span>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="dashboardPrivacy.html">
+                         <img src="../img/icons/privacy_tip-24px%201.png" alt="" class="mr-3">
+                         <span class="menu-text">privacy agreement</span>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="dashboardSupport.html">
+                          <img src="../img/icons/iconfinder_information_faq_help_info_about_3994375%201.png" alt="" class="mr-3">
+                          <span class="menu-text">support and contact</span>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="dashboardFAQ.html">
+                          <img src="../img/icons/iconfinder_FAQ_372891%201.png" alt="" class="mr-3">
+                          <span class="menu-text">Faq</span>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#">
+                          <img src="../img/icons/logout-24px%201.png" alt="" class="mr-3">
+                      <span class="menu-text">Log out</span>
+                      </a>
+                  </li>
+              </ul>
+          </div>
+          <div id="page-content-wrapper">
+              <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <form class="form-inline my-2 my-lg-0 mr-4 position-relative">
+                          <input class="form-control mr-sm-2" type="search" placeholder="Enter a product, service or member" aria-label="Search">
+                          <span class="abs icon-search"><i class="fa fa-search"></i></span>
+                      </form>
+
+                      <div class="distance-range">
+                          <p class="mb-0">
+                              <label for="amount">distance</label>
+                              <input type="text" id="amount" readonly >
+                          </p>
+
+                          <div id="slider-range-min"></div>
+                      </div>
+                      <div class="d-flex mx-auto">
+                          <a role="button" href="dashboardAddNewTrade.html" class="btn_oval bg-yellow px-5">Add new</a>
+                      </div>
+
+                      <ul class="navbar-nav ml-auto">
+                          <li class="nav-item">
+                              <a class="nav-link" href="#">
+                                  <img src="../img/icons/iconfinder_bar-graph_226594%201.png" alt="">
+                              </a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="#">
+                                  <img src="../img/icons/favorite.png" alt="">
+                              </a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="#">
+                                  <img src="../img/icons/email-24px%201.png" alt="">
+                              </a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="#">
+                                  <img src="../img/icons/star.png" alt="">
+                              </a>
+                          </li>
+                      </ul>
+
+                  </div>
+              </nav>
+              <div class="page-content inset">
+                  <div class="container-fluid">
+                      <div class="row marquee-space">
+                          <div class="col-7">
+                              <div class="marquee">
+                                  <div class="marquee__item">
+                                      btc - $106.521
+                                      <span class="marquee__seperator"></span>
+                                      gold - $106.521
+                                      <span class="marquee__seperator"></span>
+                                      dxy - $106.521
+                                      <span class="marquee__seperator"></span>
+                                      spx - $106.521
+                                      <span class="marquee__seperator"></span>
+                                      dax - 106.521
+                                      <span class="marquee__seperator"></span>
+                                      eth - $100
+                                      <span class="marquee__seperator"></span>
+                                  </div>
+                                  <div class="marquee__item">
+                                      btc - $106.521
+                                      <span class="marquee__seperator"></span>
+                                      gold - $106.521
+                                      <span class="marquee__seperator"></span>
+                                      dxy - $106.521
+                                      <span class="marquee__seperator"></span>
+                                      spx - $106.521
+                                      <span class="marquee__seperator"></span>
+                                      dax - 106.521
+                                      <span class="marquee__seperator"></span>
+                                      eth - $100
+                                      <span class="marquee__seperator"></span>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-5">
+                              <div class="d-flex justify-content-end pr-lg-5">
+                                  <form action="#">
+                                      <h4>availability</h4>
+                                      <p class="mb-0">
+                                          <input type="radio" id="test1" name="radio-group" checked>
+                                          <label for="test1">Immediately</label>
+                                      </p>
+                                      <p class="mb-0">
+                                          <input type="radio" id="test2" name="radio-group">
+                                          <label for="test2">message me</label>
+                                      </p>
+                                  </form>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="row align-items-end justify-content-between">
+                          <div class="col-7">
+                              <form action="#" class="bg-dark br-6 px-3 py-2">
+                                  <div class="d-flex ">
+                                      <div class="d-flex pr-3 align-items-center">
+                                          <label for="datepicker">
+                                              <img src="../img/icons/calendar.png" alt="" width="20" height="20">
+                                          </label>
+                                          <div class="d-flex flex-row-reverse">
+                                              <input type="datetime-local" id="datepicker" class="select-input">
+                                          </div>
+                                          <label for="datepicker">
+                                              <img src="../img/icons/arrowDown.png" alt="" width="20" height="20">
+                                          </label>
+
+                                      </div>
+                                      <div class="form-group mb-0 border-left ml-2">
+                                          <select class="form-control select-input" id="exampleFormControlSelect1">
+                                              <option>Manchester, new hampshire, us</option>
+                                              <option>2</option>
+                                              <option>3</option>
+                                              <option>4</option>
+                                              <option>5</option>
+                                          </select>
+                                      </div>
+                                      <div class="form-group  mb-0 border-left ml-2">
+                                          <select class="form-control select-input" id="exampleFormControlSelect2">
+                                              <option>availability</option>
+                                              <option>2</option>
+                                              <option>3</option>
+                                              <option>4</option>
+                                              <option>5</option>
+                                          </select>
+                                      </div>
+                                      <div class="form-group  mb-0 border-left ml-2">
+                                          <select class="form-control select-input" id="exampleFormControlSelect3">
+                                              <option>Fine 6C</option>
+                                              <option>2</option>
+                                              <option>3</option>
+                                              <option>4</option>
+                                              <option>5</option>
+                                          </select>
+                                      </div>
+                                  </div>
+
+                              </form>
+                              <div class="table mt-5">
+                                  <table class="table">
+                                      <thead class="bg-yellow thead">
+                                      <tr>
+                                          <th scope="col">Time</th>
+                                          <th scope="col">Name</th>
+                                          <th scope="col">&#9734;</th>
+                                          <th scope="col">trade</th>
+                                          <th scope="col">Distance</th>
+                                          <th scope="col">now</th>
+                                          <th scope="col"><img src="../img/icons/tableIcons/bitcoin%201.png" alt=""></th>
+                                          <th scope="col"><img src="../img/icons/tableIcons/ingot%201.png" alt=""></th>
+                                          <th scope="col"><img src="../img/icons/tableIcons/dollar%201.png" alt=""></th>
+                                          <th scope="col"><img src="../img/icons/tableIcons/Vector.png" alt=""></th>
+                                          <th scope="col"><img src="../img/icons/tableIcons/iconfinder_credit_ecommerce_shop_4177561%20(2)%201.png" alt=""></th>
+                                          <th scope="col"><img src="../img/icons/tableIcons/Vector%20(1).png" alt=""></th>
+                                      </tr>
+                                      </thead>
+                                      <tbody>
+                                          <tr>
+                                              <td>13:05</td>
+                                              <td>jOKERHA</td>
+                                              <td>625</td>
+                                              <td>plumber</td>
+                                              <td>3 MILES</td>
+                                              <td><div class="oval-o-green"></div></td>
+                                              <td>
+                                                  <div class="check-yellow"></div>
+                                              </td>
+                                              <td>
+                                              </td>
+                                              <td>
+                                                  <div class="check-yellow"></div>                                               </td>
+                                              <td >
+                                                  <div class="check-yellow"></div>                                               </td>
+                                              <td>
+                                              </td>
+                                              <td>
+                                                  <div class="check-yellow"></div>
+                                              </td>
+                                          </tr>
+                                          <tr class="bg-light-yellow">
+                                              <td>13:05</td>
+                                              <td>jOKERHA</td>
+                                              <td>625</td>
+                                              <td>plumber</td>
+                                              <td>3 MILES</td>
+                                              <td><div class="oval-o-green"></div></td>
+                                              <td>
+                                                  <div class="check-yellow"></div>                                               </td>
+                                              <td>
+                                              </td>
+                                              <td>
+                                                  <div class="check-yellow"></div>                                               </td>
+                                              <td>
+                                              </td>
+                                              <td>
+                                                  <div class="check-yellow"></div>                                               </td>
+                                              <td>
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td>13:05</td>
+                                              <td>jOKERHA</td>
+                                              <td>625</td>
+                                              <td>plumber</td>
+                                              <td>3 MILES</td>
+                                              <td><div class="oval-o-red"></div></td>
+                                              <td>
+                                                  <div class="check-yellow"></div>                                               </td>
+                                              <td>
+                                              </td>
+                                              <td>
+                                              </td>
+                                              <td >
+                                                  <div class="check-yellow"></div>                                               </td>
+                                              <td>
+                                              </td>
+                                              <td>
+                                              </td>
+                                          </tr>
+                                          <tr class="bg-light-yellow">
+                                              <td>13:05</td>
+                                              <td>jOKERHA</td>
+                                              <td>625</td>
+                                              <td>plumber</td>
+                                              <td>3 MILES</td>
+                                              <td><div class="oval-o-green"></div></td>
+                                              <td>
+                                                  <div class="check-yellow"></div>                                               </td>
+                                              <td>
+                                              </td>
+                                              <td>
+                                                  <div class="check-yellow"></div>                                               </td>
+                                              <td>
+                                              </td>
+                                              <td>
+                                                  <div class="check-yellow"></div>                                               </td>
+                                              <td>
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td>13:05</td>
+                                              <td>jOKERHA</td>
+                                              <td>625</td>
+                                              <td>plumber</td>
+                                              <td>3 MILES</td>
+                                              <td><div class="oval-o-green"></div></td>
+                                              <td>
+                                                  <div class="check-yellow"></div>
+                                              </td>
+                                              <td>
+                                              </td>
+                                              <td>
+                                                  <div class="check-yellow"></div>                                               </td>
+                                              <td >
+                                                  <div class="check-yellow"></div>                                               </td>
+                                              <td>
+                                              </td>
+                                              <td>
+                                                  <div class="check-yellow"></div>
+                                              </td>
+                                          </tr>
+                                          <tr class="bg-light-yellow">
+                                              <td>13:05</td>
+                                              <td>jOKERHA</td>
+                                              <td>625</td>
+                                              <td>plumber</td>
+                                              <td>3 MILES</td>
+                                              <td><div class="oval-o-green"></div></td>
+                                              <td>
+                                                  <div class="check-yellow"></div>                                               </td>
+                                              <td>
+                                              </td>
+                                              <td>
+                                                  <div class="check-yellow"></div>                                               </td>
+                                              <td>
+                                              </td>
+                                              <td>
+                                                  <div class="check-yellow"></div>                                               </td>
+                                              <td>
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td>13:05</td>
+                                              <td>jOKERHA</td>
+                                              <td>625</td>
+                                              <td>plumber</td>
+                                              <td>3 MILES</td>
+                                              <td><div class="oval-o-red"></div></td>
+                                              <td>
+                                                  <div class="check-yellow"></div>                                               </td>
+                                              <td>
+                                              </td>
+                                              <td>
+                                              </td>
+                                              <td >
+                                                  <div class="check-yellow"></div>                                               </td>
+                                              <td>
+                                              </td>
+                                              <td>
+                                              </td>
+                                          </tr>
+                                          <tr class="bg-light-yellow">
+                                              <td>13:05</td>
+                                              <td>jOKERHA</td>
+                                              <td>625</td>
+                                              <td>plumber</td>
+                                              <td>3 MILES</td>
+                                              <td><div class="oval-o-green"></div></td>
+                                              <td>
+                                                  <div class="check-yellow"></div>                                               </td>
+                                              <td>
+                                              </td>
+                                              <td>
+                                                  <div class="check-yellow"></div>                                               </td>
+                                              <td>
+                                              </td>
+                                              <td>
+                                                  <div class="check-yellow"></div>                                               </td>
+                                              <td>
+                                              </td>
+                                          </tr>
+                                      </tbody>
+                                  </table>
+                              </div>
+                          </div>
+                          <div class="col-4">
+                              <h3 class="mb-3">my trades</h3>
+                              <table class="table">
+                                  <thead class="bg-yellow thead">
+                                  <tr>
+                                      <th scope="col">trade</th>
+                                      <th scope="col">now</th>
+                                      <th scope="col">Distance</th>
+                                      <th scope="col">rating</th>
+                                      <th scope="col">Views</th>
+                                  </tr>
+                                  </thead>
+                                  <tbody>
+                                      <tr>
+                                          <td >Painter/decorator</td>
+                                          <td><div class="oval-o-green"></div></td>
+                                          <td>3 MILES</td>
+                                          <td></td>
+                                          <td></td>
+                                      </tr>
+                                      <tr class="bg-light-yellow">
+                                          <td ></td>
+                                          <td><div class="oval-o-red"></div></td>
+                                          <td>3 MILES</td>
+                                          <td></td>
+                                          <td></td>
+                                      </tr>
+                                      <tr>
+                                          <td></td>
+                                          <td><div class="oval-o-green"></div></td>
+                                          <td>3 MILES</td>
+                                          <td></td>
+                                          <td></td>
+                                      </tr>
+                                      <tr class="bg-light-yellow">
+                                          <td ></td>
+                                          <td><div class="oval-o-red"></div></td>
+                                          <td>3 MILES</td>
+                                          <td></td>
+                                          <td></td>
+                                      </tr>
+                                      <tr>
+                                          <td></td>
+                                          <td><div class="oval-o-green"></div></td>
+                                          <td>3 MILES</td>
+                                          <td></td>
+                                          <td></td>
+                                      </tr>
+                                      <tr class="bg-light-yellow">
+                                          <td ></td>
+                                          <td><div class="oval-o-green"></div></td>
+                                          <td>3 MILES</td>
+                                          <td></td>
+                                          <td></td>
+                                      </tr>
+                                      <tr>
+                                          <td></td>
+                                          <td><div class="oval-o-green"></div></td>
+                                          <td>3 MILES</td>
+                                          <td></td>
+                                          <td></td>
+                                      </tr>
+                                      <tr class="bg-light-yellow">
+                                          <td></td>
+                                          <td><div class="oval-o-green"></div></td>
+                                          <td>3 MILES</td>
+                                          <td></td>
+                                          <td></td>
+                                      </tr>
+                                  </tbody>
+                              </table>
+                          </div>
+                      </div>
+                      <div class="col-12 col-md-7 d-flex justify-content-center py-5">
+                          <button class="bg-yellow  border-0 py-2 px-4 br-6">invite your friends to freetrade</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</main>
+
+
+
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script src="../js/bootstrap/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="../js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="../js/jquery-ui.js"></script>
+<script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("active");
+        $(".sidebar-nav-list").toggleClass("active");
+        $(".dashboard-avatar").toggleClass("active");
+    });
+</script>
+<script>
+    $( function() {
+        $( "#slider-range-min" ).slider({
+            range: "min",
+            value: 500,
+            min: 0,
+            max: 1000,
+            slide: function( event, ui ) {
+                $( "#amount" ).val( "(" + ui.value  + "miles)" );
+            }
+        });
+        $( "#amount" ).val( "(" + $( "#slider-range-min" ).slider( "value" )  + "miles)");
+
+    } );
+</script>
+</body>
+
+</html>

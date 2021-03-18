@@ -1,0 +1,91 @@
+body {
+  font-family:  "Montserrat", sans-serif;
+  background-color: white;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  font-weight: 400;
+  max-width: 1920px;
+  width: 100%;
+  margin:  0 auto;
+  &.body-bg {
+    position: relative;
+    &::after {
+      content: url("../../img/Path 3547.svg");
+      position: absolute;
+      top: -45%;
+      right: -21%;
+    }
+    &::before {
+      content: url("../../img/group 23.svg");
+      position: absolute;
+      top: -82%;
+      left: 10%;
+    }
+  }
+}
+.section1 {
+  margin-top: 150px;
+  position:relative;
+  &::before {
+    content: '';
+    background: url("../../img/World_Map_transperent (1).gif") no-repeat;
+    position: absolute;
+    max-width: 1017px;
+    width: 100%;
+    height: 400px;
+    top: 0;
+    right: 0;
+    background-size: 100%;
+  }
+  .main-title-area {
+    max-width: 662px;
+    margin: 0 auto;
+    .main-title {
+      font-family:  "Montserrat", sans-serif;
+      font-weight: 900;
+      font-size: 50px;
+      line-height: 70px;
+      color: $black;
+      text-transform: uppercase;
+    }
+    .info-text {
+      font: normal normal normal 18px/24px Open Sans;
+      color: $black;
+    }
+    button {
+      width: 208px;
+    }
+  }
+
+  //.img-area {
+  //  background-image: url("../../img/Group 14987.png");
+  //  width: 100%;
+
+  //}
+  .marquee-style {
+    position: relative;
+    &::after {
+      content: url("../../img/Rectangle 13179.svg");
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+    &::before {
+      content: url("../../img/Rectangle 13178.svg");
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 11;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+

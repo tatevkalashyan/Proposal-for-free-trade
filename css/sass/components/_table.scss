@@ -1,0 +1,58 @@
+.table {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  font-family: "Scada",sans-serif;
+  .thead {
+    background-color: $base-yellow;
+    margin-bottom: 0;
+    border-radius: 6px 6px 0 0;
+    overflow: hidden;
+    th {
+      padding: 0 4px;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 14px;
+      line-height: 17px;
+      vertical-align: middle;
+      box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
+      height: 35px;
+    }
+    .col {
+      @extend .col;
+      color: #021244;
+    }
+  }
+  .bg-light-yellow {
+    background-color: #FFF9E8;
+    //td{
+    //  background-color: #FFF9E8;
+    //}
+  }
+  .col, td {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    min-width: 40px;
+    height: 35px;
+    color: #000!important;
+    text-align: center;
+    white-space: nowrap;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
+    vertical-align: middle;
+    padding: 0 4px;
+    background-color: transparent;
+    &.col-big {
+      min-width: 90px;
+      padding: 0 16px;
+    }
+  }
+  &.table-right {
+    .thead .col ,
+    .col {
+      min-width: max-content;
+    }
+  }
+}

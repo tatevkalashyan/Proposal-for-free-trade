@@ -1,0 +1,39 @@
+
+$speed: 30s;
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+
+  &:hover &__item { animation-play-state: paused; }
+
+  &__seperator { margin: 0 2rem; }
+
+  &__item {
+    display: inline-block;
+    will-change: transform;
+    animation: marquee $speed linear infinite;
+    padding: 1.5% 0;
+  }
+}
+
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+
+// Styling
+.marquee {
+  height: 40px;
+  background: #E8E8E8;
+  border-radius: 6px;
+  color: #DFA300;
+  font-family: "Scada",sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.11em;
+}

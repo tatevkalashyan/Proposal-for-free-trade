@@ -1,0 +1,207 @@
+a {
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+  outline: none;
+}
+button:focus {
+  outline: none;
+}
+.fs-12 {
+  font-size: 12px!important;
+}
+.fs-16 {
+  font-size: 16px!important;
+  line-height: 19px!important;
+}
+.fs-18 {
+  font-size: 18px!important;
+  line-height: 26px!important;
+}
+.logo-text {
+  font-family: 'Scada', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 45px;
+  letter-spacing: 0.235em;
+  text-transform: uppercase;
+  color: $base-dark;
+}
+.bg-dark {
+  background-color: $base-dark!important;
+}
+.br-6 {
+  border-radius: 6px;
+}
+.br-28 {
+  border-radius: 28px;
+}
+.bg-yellow {
+  background-color: $base-yellow;
+}
+button.br-6 {
+  font-family: "Scada", sans-serif;
+  background-color: #DFA300;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  height: 52px;
+}
+.color-yellow {
+  color: $base-yellow!important;
+}
+a.color-yellow {
+  text-decoration: underline;
+}
+.bg-dark-white {
+  background-color: $dark-white;
+}
+.bg-light-yellow {
+  background-color: #FFF9E8;
+}
+.btn_oval {
+  min-width: 100px;
+  height: 50px;
+  font-size: 18px;
+  line-height: 24px;
+  border-radius: 25px;
+  text-transform: capitalize;
+  border: 0;
+  outline: 0;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+.btn_oval-small {
+  min-width: 100px;
+  height: 40px;
+  font-size: 14px;
+  line-height: 20px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  border: 0;
+  outline: 0;
+}
+
+.btn-blue {
+  background: transparent linear-gradient(180deg, #5690FF 0%, #387DFF 100%) 0% 0% no-repeat padding-box;
+  box-shadow: 0 3px 9px #387DFF80;
+  border-radius: 20px;
+  color: #FFFFFF;
+}
+.btn_oval.bg-dark-white {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+.btn_oval.bg-yellow {
+  font-family: 'Scada', sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  &:hover {
+    background: #C4C4C4;
+  }
+}
+.btn-transparent.text-white {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  background-color: transparent;
+}
+.text-base {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.165em;
+  color: $base-dark;
+}
+.line-purple {
+  width: 120px;
+  height: 2px;
+  background-color: #6C63FF;
+}
+.base-title {
+  font: normal normal 700 36px/46px Montserrat;
+  color: $base-dark;
+}
+.base-subtitle {
+  font: normal normal 600 20px/22px Montserrat;
+  color: $base-dark;
+}
+.pr-25 {
+  padding-right: 2.5rem;
+}
+.flex-1 {
+  flex: 1;
+}
+
+#owl-demo .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.oval-o-green {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #01a825;
+  border-radius: 100%;
+  margin: 0 auto;
+}
+.oval-o-red {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #FF2E00;
+  border-radius: 100%;
+  margin: 0 auto;
+}
+.check-yellow {
+  width: 20px;
+  height: 10px;
+  border-top: 0;
+  border-right: 0;
+  border-left: 2px solid #DFA300;
+  border-bottom: 2px solid #DFA300;
+  background-color: transparent;
+  transform: rotate(-45deg);
+  margin: 0 auto;
+}
+.rating {
+  display: block;
+  direction: rtl;
+  unicode-bidi: bidi-override;
+  text-align: center;
+  [type="radio"]:not(:checked) + label:before {
+   display: none;
+  }
+  .star {
+    display: none;
+    &:checked ~ label {
+      color: orange;
+    }
+  }
+  span {
+    color: orange;
+  }
+  label {
+    color: orange;
+    display: inline-block;
+    font-size: 14px;
+    margin: 0 -1px;
+    transition: transform .15s ease;
+    &:hover {
+      transform: scale(1.35, 1.35);
+      color: orange;
+      & ~ label {
+        color: orange;
+      }
+    }
+  }
+}
+

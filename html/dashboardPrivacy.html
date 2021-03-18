@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+          integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="../css/secondary/jq-ui.css">
+    <link rel="stylesheet" href="../css/secondary/owl-carousel-min.css">
+    <link rel="stylesheet" href="../css/secondary/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/css/main.css">
+</head>
+
+<body>
+
+<main>
+    <div class="dashboard">
+        <div id="wrapper" class="active">
+            <div id="sidebar-wrapper">
+                <ul id="sidebar_menu" class="sidebar-nav">
+                    <li class="sidebar-brand">
+                        <a id="menu-toggle" href="#">
+                            <img src="../img/logo/logo.png" width="167" height="39" alt="">
+                            <span id="main_icon"><img src="../img/icons/hamburger.png" alt=""></span>
+                        </a>
+                    </li>
+                    <div class="p-4 d-flex align-items-center dashboard-avatar">
+                        <div class="dashboard-avatar-img">
+                            <img src="../img/lukas-denier-fVM6nwS9FGQ-unsplash%201.png" alt="">
+                        </div>
+                        <div class="avatar-name ml-3">Welcome, batman</div>
+                    </div>
+                </ul>
+                <ul class="sidebar-nav sidebar-nav-list" id="sidebar">
+                    <li>
+                        <a href="dashboard.html">
+                            <img src="../img/icons/dashboard-24px%201.png" alt="" class="mr-3">
+                            <span class="menu-text">Workstation</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="dashboardAccount.html">
+                            <img src="../img/icons/person_outline-24px%20(2)%201.png" alt="" class="mr-3">
+                            <span class="menu-text">Account</span>
+                        </a>
+                    </li>
+                    <li   class="active">
+                        <a href="dashboardPrivacy.html">
+                            <img src="../img/icons/privacy_tip-24px%201.png" alt="" class="mr-3">
+                            <span class="menu-text">privacy agreement</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="dashboardSupport.html">
+                            <img src="../img/icons/iconfinder_information_faq_help_info_about_3994375%201.png" alt="" class="mr-3">
+                            <span class="menu-text">support and contact</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="dashboardFAQ.html">
+                            <img src="../img/icons/iconfinder_FAQ_372891%201.png" alt="" class="mr-3">
+                            <span class="menu-text">Faq</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../img/icons/logout-24px%201.png" alt="" class="mr-3">
+                            <span class="menu-text">Log out</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="page-content-wrapper">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <form class="form-inline my-2 my-lg-0 mr-4 position-relative">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Enter a product, service or member" aria-label="Search">
+                            <span class="abs icon-search"><i class="fa fa-search"></i></span>
+                        </form>
+
+                        <div class="distance-range">
+                            <p class="mb-0">
+                                <label for="amount">distance</label>
+                                <input type="text" id="amount" readonly >
+                            </p>
+
+                            <div id="slider-range-min"></div>
+                        </div>
+                        <div class="d-flex mx-auto">
+                            <button class="btn_oval bg-yellow px-5">Add new</button>
+                        </div>
+
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <img src="../img/icons/iconfinder_bar-graph_226594%201.png" alt="">
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <img src="../img/icons/favorite.png" alt="">
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <img src="../img/icons/email-24px%201.png" alt="">
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <img src="../img/icons/star.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </nav>
+                <div class="page-content inset privacy-content p-0">
+                    <div class="container-fluid px-lg-0">
+                       <div class="d-flex">
+                           <div class="nav flex-column nav-pills bg-light-yellow" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                               <a class="nav-link active" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1" role="tab" aria-controls="v-pills-1" aria-selected="true">
+                                 <span>Lorem Ipsum is simply dummy text of the printing and typesetting  typesetting industry.y text of the printing and tyy text of the printing and industry.y text of the printing and tyy text of the printing and ty</span>
+                                   <i class="abs fas fa-angle-right"></i> </a>
+                               <a class="nav-link" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab" aria-controls="v-pills-2" aria-selected="false">
+                                   <span>Lorem Ipsum has been the industry's standard dummy
+                                           text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+                                   <i class="abs fas fa-angle-right"></i></a>
+                               <a class="nav-link" id="v-pills-3-tab" data-toggle="pill" href="#v-pills-3" role="tab" aria-controls="v-pills-3" aria-selected="false">
+                                   <span>Lorem Ipsum has been the industry's standard dummy
+                                           text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+                                   <i class="abs fas fa-angle-right"></i></a>
+                               <a class="nav-link" id="v-pills-4-tab" data-toggle="pill" href="#v-pills-4" role="tab" aria-controls="v-pills-4" aria-selected="false">
+                                   <span>Lorem Ipsum has been the industry's standard dummy
+                                           text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+                                   <i class="abs fas fa-angle-right"></i></a>
+                           </div>
+                           <div class="tab-content flex-1 px-5" id="v-pills-tabContent">
+                               <div class="tab-pane fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-1-tab">
+                                   <div class="px-5">
+                                       <h2>privacy agreement</h2>
+                                       <p>
+                                           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                           text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                           It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                                           It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                                           and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                       </p>
+                                       <p>
+                                           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                           text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                           It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                                           It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                                           and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                       </p>
+                                       <p>
+                                           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                           text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                           It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                                           It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                                           and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                       </p>
+                                   </div>
+                               </div>
+                               <div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-2-tab">2 Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem  </div>
+                               <div class="tab-pane fade" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-3-tab">3 Lorem ipsum Lorem ipsumLorem ipsumLorem  </div>
+                               <div class="tab-pane fade" id="v-pills-4" role="tabpanel" aria-labelledby="v-pills-4-tab">4 Lorem ipsum Lorem ipsumLorem </div>
+                               <div class="d-flex justify-content-center py-5">
+                                   <button class="bg-yellow  border-0 py-2 px-4 br-6">invite your friends to freetrade</button>
+                               </div>
+                           </div>
+                       </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script src="../js/bootstrap/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="../js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="../js/jquery-ui.js"></script>
+<script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("active");
+        $(".sidebar-nav-list").toggleClass("active");
+        $(".dashboard-avatar").toggleClass("active");
+    });
+</script>
+<script>
+    $( function() {
+        $( "#slider-range-min" ).slider({
+            range: "min",
+            value: 500,
+            min: 0,
+            max: 1000,
+            slide: function( event, ui ) {
+                $( "#amount" ).val( "(" + ui.value  + "miles)" );
+            }
+        });
+        $( "#amount" ).val( "(" + $( "#slider-range-min" ).slider( "value" )  + "miles)");
+
+    } );
+</script>
+</body>
+
+</html>

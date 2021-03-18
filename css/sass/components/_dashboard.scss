@@ -1,0 +1,545 @@
+.dashboard {
+  font-family: "Scada", sans-serif;
+  .row{
+    margin-left:0px;
+    margin-right:0px;
+  }
+
+  #wrapper {
+    padding-left: 100px;
+    transition: all .2s ease 0s;
+    height: 100%
+  }
+
+  #sidebar-wrapper {
+    margin-left: -380px;
+    left: 100px;
+    width: 380px;
+    background: $base-yellow;
+    position: fixed;
+    height: 100%;
+    z-index: 10000;
+    transition: all .2s ease 0s;
+  }
+
+  .sidebar-nav {
+    display: block;
+    float: left;
+    width: 380px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  #page-content-wrapper {
+    padding-left: 0;
+    margin-left: 0;
+    width: 100%;
+    height: auto;
+  }
+  #wrapper.active {
+    padding-left: 380px;
+  }
+  #wrapper.active #sidebar-wrapper {
+    left: 380px;
+  }
+
+  #page-content-wrapper {
+    width: 100%;
+    .navbar-light {
+      min-height: 98px;
+      background-color: #FFF9E8!important;
+      padding: 0 100px;
+      form {
+        max-width: 550px;
+        width: 100%;
+         input[type="search"] {
+           border: 1px solid #021244;
+           box-sizing: border-box;
+           border-radius: 47px;
+           background-color: #FFF9E8;
+           font-family: "Scada", sans-serif;
+           font-style: normal;
+           font-weight: bold;
+           width: 100%;
+           height: 40px;
+           font-size: 14px;
+           line-height: 17px;
+           letter-spacing: 0.11em;
+           text-transform: uppercase;
+           color: #DADADA;
+           display: block;
+           &:focus {
+             outline: none;
+             box-shadow: none;
+           }
+         }
+        .icon-search.abs {
+          position: absolute;
+          right: 30px;
+        }
+      }
+    }
+  }
+
+  #sidebar_menu li a,
+  .sidebar-nav li a {
+    color: #999;
+    display: block;
+    float: left;
+    text-decoration: none;
+    width: 380px;
+    background: $base-yellow;
+    -webkit-transition: background .2s;
+    -moz-transition: background .2s;
+    -o-transition: background .2s;
+    -ms-transition: background .2s;
+    transition: background .2s;
+  }
+  .sidebar_name {
+    padding-top: 25px;
+    color: #fff;
+    opacity: .7;
+  }
+
+  .sidebar-nav li {
+    line-height: 54px;
+    text-indent: 20px;
+  }
+
+  .sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    font-family: 'Scada', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    color: $base-dark;
+  }
+  .sidebar-nav li.active a,
+  .sidebar-nav li a:hover {
+    color: $base-dark;
+    background: #fff;
+    text-decoration: none;
+  }
+
+  .sidebar-nav li a:active,
+  .sidebar-nav li a:focus {
+    text-decoration: none;
+  }
+
+  .sidebar-nav > .sidebar-brand {
+    height: 65px;
+    line-height: 60px;
+    font-size: 18px;
+  }
+
+  .sidebar-nav > .sidebar-brand a {
+    color: #999999;
+  }
+  .sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+  }
+  .sidebar-nav-list {
+    &.active {
+      li {
+        a {
+          padding-left: 40px;
+          text-align: right;
+          padding-right: 24px;
+          transition: all 0.2s;
+          .menu-text{
+            display: none;
+          }
+        }
+      }
+
+    }
+    li {
+      a {
+        padding-left: 40px;
+      }
+    }
+  }
+  .dashboard-avatar {
+    .dashboard-avatar-img {
+      border: 6px solid #FFFFFF;
+      border-radius: 50%;
+      width: 83px;
+      height: 83px;
+      overflow: hidden;
+    }
+    .avatar-name {
+      font-family: "Scada", sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 17px;
+      letter-spacing: 0.11em;
+      text-decoration-line: underline;
+      text-transform: uppercase;
+      color: #2E4051;
+    }
+    &.active {
+      padding: 0.5rem!important;
+      .dashboard-avatar-img {
+        margin-left: auto;
+      }
+      .avatar-name {
+        display: none;
+      }
+    }
+  }
+  #main_icon {
+    float:right;
+    padding-right: 25px;
+  }
+  .sub_icon {
+    float:right;
+    padding-right: 35px;
+    padding-top:10px;
+  }
+  .content-header {
+    height: 65px;
+    line-height: 65px;
+  }
+  .content-header h1 {
+    margin: 0;
+    margin-left: 20px;
+    line-height: 65px;
+    display: inline-block;
+  }
+  .btn_oval.bg-yellow {
+    height: 34px;
+    font-family: "Scada", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.11em;
+    color: #021244;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+  }
+  .page-content.inset {
+    padding: 50px 70px 50px 100px;
+  }
+
+  .select-input {
+    border: 0;
+    background-color: transparent;
+    min-width: 100px;
+    //padding: 0 24px;
+    font-family: "Scada", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+  .marquee-space {
+    h4 {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 0.11em;
+      text-transform: uppercase;
+      color: #334478;
+    }
+  }
+  h3 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    color: #021244;
+  }
+  
+  .accordion {
+    .card {
+      background-color: transparent;
+      border: 1px solid #FAC840;
+      margin-bottom: 10px;
+      border-radius: 6px;
+      .card-header {
+        border: 0;
+        box-sizing: border-box;
+        background-color: transparent;
+        padding: 0;
+        margin-bottom: 1px;
+        margin-top: 1px;
+        min-height: 45px;
+        display: flex;
+        align-items: center;
+        .btn {
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 17px;
+          letter-spacing: 0.05em;
+          text-transform: uppercase;
+          color: #334478;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .support__contact {
+    width: 100%;
+    width: 1500px;
+    max-width: 100%;
+    margin: 0 auto;
+
+    h1 {
+      display: block;
+      margin: 30px 0 36px 0;
+      width: 100%;
+      text-align: center;
+      font: bold 24px/30px "Scada";
+      letter-spacing: 0.11em;
+      text-transform: uppercase;
+      color: #021244;
+    }
+
+    .support-inner-section {
+      box-sizing: border-box;
+      padding: 0 16px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-flow: dense;
+      grid-gap: 25px;
+
+      .support-sect-block {
+        box-sizing: border-box;
+        padding: 39px 33px;
+        height: auto;
+        background: #fff9e8;
+        border-radius: 28px;
+        color: #021244;
+
+        h4 {
+          font: bold 14px/17px "Scada";
+          text-transform: uppercase;
+          letter-spacing: 0.11em;
+        }
+        p {
+          font: 400 14px/17px "Scada";
+          padding: 12px 0;
+          letter-spacing: 0.11em;
+        }
+        span {
+          display: block;
+          text-align: right;
+          color: #84a2ff;
+          font: 400 14px/17px "Scada";
+          letter-spacing: 0.11em;
+        }
+      }
+      @media (max-width: 1336px) {
+        grid-gap: 16px;
+      }
+      @media (max-width: 1026px) {
+        grid-template-columns: repeat(2, 1fr);
+        .support-sect-block {
+          padding: 28px 22px;
+        }
+      }
+      @media (max-width: 650px) {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+        .support-sect-block {
+          padding: 28px 22px;
+        }
+      }
+      @media (max-width: 450px) {
+        .support-sect-block {
+          padding: 18px 15px;
+          p {
+            margin: 0 8px;
+          }
+        }
+      }
+      @media (max-width: 650px) {
+        h1 {
+          font: bold 19px/24px "Scada";
+        }
+      }
+    }
+  }
+
+
+  .privacy-content {
+    .nav-pills {
+      max-width: 450px;
+      width: 100%;
+      min-height: calc(100vh - 98px);
+      .nav-link {
+        position: relative;
+        background-color: transparent;
+        border: 1px solid #FAC840;
+        border-radius: 0 6px 6px 0;
+        height: 70px;
+        color: #334478;
+        display: flex;
+        align-items: center;
+        margin-bottom: 2px;
+        .abs{
+          position: absolute;
+          right: 20px;
+          top: 28px;
+        }
+        &.active {
+          background-color: #fff;
+          color: #334478;
+        }
+        span {
+          padding-right: 30px;
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 20px;
+          letter-spacing: 0.11em;
+          text-transform: uppercase;
+          color: #334478;
+        }
+      }
+    }
+    .tab-content {
+      padding: 30px;
+      h2 {
+        font-size: 24px;
+        line-height: 30px;
+        letter-spacing: 0.11em;
+        text-transform: uppercase;
+        color: #021244;
+        text-align: center;
+      }
+      p {
+        position: relative;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 34px;
+        letter-spacing: 0.11em;
+        text-transform: uppercase;
+
+        color: #334478;
+        &::before {
+          content: '';
+          width: 15px;
+          height: 15px;
+          border-radius: 50%;
+          background-color: #1E1E1E;
+          position: absolute;
+          left: -25px;
+          top: 6px;
+        }
+      }
+    }
+  }
+
+  .account-card {
+    flex: 0 0 296px;
+    .card-title {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 17px;
+      letter-spacing: 0.11em;
+      text-decoration-line: underline;
+      text-transform: uppercase;
+      color: #021244;
+    }
+  }
+
+  .avatar-upload {
+    position: relative;
+    max-width: 130px;
+    margin: 0 auto;
+    .avatar-edit {
+      position: absolute;
+      right: 12px;
+      z-index: 1;
+      top: 10px;
+      input {
+        display: none;
+        + label {
+          position: absolute;
+          right: -50px;
+          top: -10px;
+          .fas {
+            font-size: 20px;
+            color: darkgray;
+          }
+        }
+      }
+    }
+    .avatar-preview {
+      width: 130px;
+      height: 130px;
+      position: relative;
+      border-radius: 100%;
+      border: 6px solid #ffffff;
+      background-color: #cccccc;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+      > div {
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+  }
+
+  .addNewTrade-content {
+    form {
+      .form-control {
+        border: 1px solid $base-yellow;
+        border-radius: 6px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.11em;
+        color: #C4C4C4;
+      }
+    }
+  }
+
+
+  @media (max-width:767px) {
+    #wrapper {
+      padding-left: 70px;
+      transition: all .2s ease 0s;
+    }
+    #sidebar-wrapper {
+      left: 70px;
+    }
+    #wrapper.active {
+      padding-left: 380px;
+    }
+    #wrapper.active #sidebar-wrapper {
+      left: 380px;
+      width: 380px;
+      transition: all .4s ease 0s;
+    }
+  }
+}
